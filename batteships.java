@@ -41,7 +41,8 @@ public class Battleships {
 			message = "Hit!";
 			target = hit;
 	}else if(target == water) {
-			message = "Miss!";		
+			message = "Miss!";
+			target = miss;
 	}else {
 		message = "Already hit!";
 	}
@@ -69,7 +70,7 @@ public class Battleships {
 		int gameBoardLength = gameBoard.length;
 		System.out.print("  ");
 		for (int i =0; i<gameBoardLength; i++) {
-			System.out.print(i + " ");
+			System.out.print(i + 1 + " ");
 		}
 		System.out.println();
 		for (int row = 0; row < gameBoardLength; row++) {
